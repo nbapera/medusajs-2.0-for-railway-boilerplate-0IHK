@@ -36,7 +36,6 @@ export default function CheckoutLayout({
       </div>
       <div className="relative" data-testid="checkout-container">{children}</div>
       <div className="py-4 w-full flex items-center justify-center">
-        <MedusaCTA />
       </div>
     </div>
   )
