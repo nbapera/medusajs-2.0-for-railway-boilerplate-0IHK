@@ -22,7 +22,7 @@ export default async function Nav() {
 
           <div className="flex items-center h-full">
             <LocalizedClientLink href="/" className="h-full flex items-center" data-testid="nav-store-link">
-              <Image src="/logo.png" alt="Creativa Pokloniaaa Logo" width={100} height={40} />
+              <Image src="./logo.png" alt="Creativa Pokloniaaa Logo" width={100} height={40} />
             </LocalizedClientLink>
           </div>
 
