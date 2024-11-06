@@ -1,4 +1,5 @@
 import { Suspense } from "react"
+import Image from "next/image"
 
 import { listRegions } from "@lib/data/regions"
 import { StoreRegion } from "@medusajs/types"
@@ -20,12 +21,8 @@ export default async function Nav() {
           </div>
 
           <div className="flex items-center h-full">
-            <LocalizedClientLink
-              href="/"
-              className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
-              data-testid="nav-store-link"
-            >
-              Creativa Pokloniaaa
+            <LocalizedClientLink href="/" className="h-full flex items-center" data-testid="nav-store-link">
+              <Image src="/logo.png" alt="Creativa Pokloniaaa Logo" width={100} height={40} />
             </LocalizedClientLink>
           </div>
 
