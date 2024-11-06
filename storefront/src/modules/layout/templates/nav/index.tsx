@@ -7,6 +7,8 @@ import LocalizedClientLink from "@modules/common/components/localized-client-lin
 import CartButton from "@modules/layout/components/cart-button"
 import SideMenu from "@modules/layout/components/side-menu"
 
+import logo from './logo.png'
+
 export default async function Nav() {
   const regions = await listRegions().then((regions: StoreRegion[]) => regions)
 
@@ -22,7 +24,7 @@ export default async function Nav() {
 
           <div className="flex items-center h-full">
             <LocalizedClientLink href="/" className="h-full flex items-center" data-testid="nav-store-link">
-              <Image src="./logo.png" alt="Creativa Pokloniaaa Logo" width={100} height={40} />
+              <Image src={logo} alt="Creativa Pokloniaaa Logo" width={100} height={40} />
             </LocalizedClientLink>
           </div>
 
